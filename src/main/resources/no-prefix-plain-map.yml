@@ -1,0 +1,5 @@
+foo: bar
+bar: foo
+aninteger: 0
+along: 1234567890
+aboolean: true

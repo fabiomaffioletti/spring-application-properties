@@ -1,0 +1,5 @@
+prefix.foo: prefix.bar
+prefix.bar: prefix.foo
+prefix.aninteger: -1
+prefix.along: 987654321
+prefix.aboolean: false
