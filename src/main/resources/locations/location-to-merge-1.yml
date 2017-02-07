@@ -1,0 +1,11 @@
+links:
+    category1:
+        all-keys:
+            /k1: k1
+            /k2: k2
+            /k3: k3
+
+        all-values:
+            /v1: v1
+            /v2: v2
+            /v3: v3
