@@ -13,7 +13,6 @@ import org.springframework.context.EnvironmentAware;
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.core.convert.support.DefaultConversionService;
 import org.springframework.core.env.Environment;
-import org.springframework.core.env.MutablePropertySources;
 import org.springframework.core.env.PropertySources;
 import org.springframework.core.env.StandardEnvironment;
 import org.springframework.core.io.DefaultResourceLoader;
@@ -91,10 +90,8 @@ public class ApplicationPropertiesBindingPostProcessor implements BeanFactoryAwa
                 }
                 loader.load(resource);
             }
-            MutablePropertySources loaded = loader.getPropertySources();
-            return loaded;
-        }
-        catch (IOException ex) {
+            return loader.getPropertySources();
+        } catch (IOException ex) {
             throw new IllegalStateException(ex);
         }
     }
