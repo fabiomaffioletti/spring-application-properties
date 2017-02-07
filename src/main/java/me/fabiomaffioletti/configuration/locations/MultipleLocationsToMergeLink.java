@@ -14,4 +14,6 @@ public class MultipleLocationsToMergeLink {
 
     private Map<String, String> allKeys = new HashMap<>();
 
+    private Map<String, String> allValues = new HashMap<>();
+
 }
